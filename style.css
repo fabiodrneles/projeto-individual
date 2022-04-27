@@ -3,16 +3,40 @@
     padding: 0;
 }
 
-
-
-/* Header */
-
 header {
     position: absolute;
     width: 411px;
     height: 60px;
     left: 0px;
     top: 24px;
-    box-sizing: border-box;
     background: #E0E0E0;
-    }
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 411px;
+    height: 43px;
+    left: calc(50% - 411px/2);
+    top: calc(50% - 43px/2 + 0.5px);
+    background-color: #E0E0E0;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.logo {
+    margin-left: 22px;
+}
+
+.menu {
+    margin-right: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
