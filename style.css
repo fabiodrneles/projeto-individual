@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* Smartphone */
+
 header {
     position: absolute;
     width: 411px;
@@ -40,3 +42,46 @@ nav {
     margin-top: 18px;
     margin-bottom: 18px;
 }
+
+.first_block {
+    position: absolute;
+    width: 371px;
+    height: 290px;
+    margin-left: 20px;
+    margin-top: 110px;
+    background-color: red;
+}
+
+.second_block {
+    background-color: blueviolet;
+    position: absolute;
+    width: 371px;
+    height: 281px;
+    margin-left: 20px;
+    margin-top: 420px;
+
+}
+
+footer {
+    position: absolute;
+    width: 411px;
+    height: 8px;
+    left: 0px;
+    top: 723px;
+    background: #333333;
+    }
+
+/*
+#drop-down {
+    position: absolute;
+    height: 32px;
+    left: 0%;
+    right: 0%;
+    top: 25px;
+
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+*/
