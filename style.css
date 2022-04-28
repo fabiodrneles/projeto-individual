@@ -52,6 +52,347 @@ nav {
     background-color: red;
 }
 
+.formulario_transacao {
+    background-color: green;
+    position: absolute;
+    width: 371px;
+    height: 57px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 80.34%;
+}
+
+.nome_mercadoria {
+    background-color: rgb(15, 167, 149);
+    position: absolute;
+    width: 371px;
+    height: 56.67px;
+    margin-left: 0px;
+    margin-top: 77px;
+    border-radius: 0px;
+}
+
+.valor {
+    background-color: #ebef0d;
+    position: absolute;
+    width: 371px;
+    height: 55px;
+    left: 0%;
+    right: 0%;
+    margin-top: 52.99%;
+    bottom: 28.05%;
+}
+
+.botao {
+    background-color: #e30ea7;
+    position: absolute;
+    width: 371px;
+    height: 33px;
+    margin-top: 228.67px;
+}
+
+hr {
+    position: absolute;
+    width: 371px;
+    height: 0px;
+    left: 0px;
+    top: 290px;
+    
+    border: 1px solid #000000;
+}
+
+
+.second_intern {
+    background-color: aqua;
+    position: absolute;
+    width: 371px;
+    height: 187px;
+    margin-top: 60px;
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+.e13_39 { 
+	overflow:hidden;
+}
+.e13_39 { 
+	width:371px;
+	height:187px;
+	position:absolute;
+}
+.e11_0 { 
+	color:rgba(0, 0, 0, 1);
+	width:72px;
+	height:22px;
+	position:absolute;
+	left:30px;
+	top:0px;
+	font-family:Lato;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e11_1 { 
+	color:rgba(0, 0, 0, 1);
+	width:33px;
+	height:22px;
+	position:absolute;
+	left:296px;
+	top:0px;
+	font-family:Lato;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e11_2 { 
+	color:rgba(0, 0, 0, 1);
+	width:231px;
+	height:34px;
+	position:absolute;
+	left:30px;
+	top:29px;
+	font-family:Lato;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e11_6 { 
+	transform: rotate(-0.000005008956538086317deg);
+	width:371px;
+	height:0px;
+	position:absolute;
+	left:0px;
+	top:22.000030517578125px;
+}
+.e11_6 { 
+	border:1px solid rgba(151.00000619888306, 151.00000619888306, 151.00000619888306, 1);
+}
+.e11_4 { 
+	color:rgba(0, 0, 0, 1);
+	width:9px;
+	height:25.34964942932129px;
+	position:absolute;
+	left:10px;
+	top:29px;
+	font-family:Lato;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e11_5 { 
+	transform: rotate(-0.000007503084213529598deg);
+	width:371px;
+	height:0px;
+	position:absolute;
+	left:0px;
+	top:70.94038391113281px;
+}
+.e11_5 { 
+	border:1px solid rgba(151.00000619888306, 151.00000619888306, 151.00000619888306, 1);
+}
+.e11_3 { 
+	color:rgba(0, 0, 0, 1);
+	width:98px;
+	height:41.82691955566406px;
+	position:absolute;
+	left:263px;
+	top:29px;
+	font-family:Lato;
+	text-align:right;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_21 { 
+	color:rgba(0, 0, 0, 1);
+	width:231px;
+	height:18px;
+	position:absolute;
+	left:30px;
+	top:78px;
+	font-family:Lato;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_22 { 
+	transform: rotate(-0.000005008956538086317deg);
+	width:371px;
+	height:0px;
+	position:absolute;
+	left:0px;
+	top:71.00003051757812px;
+}
+.e13_22 { 
+	border:1px solid rgba(151.00000619888306, 151.00000619888306, 151.00000619888306, 1);
+}
+.e13_23 { 
+	color:rgba(0, 0, 0, 1);
+	width:9px;
+	height:25.34964942932129px;
+	position:absolute;
+	left:10px;
+	top:78px;
+	font-family:Lato;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_24 { 
+	transform: rotate(-0.000007503084213529598deg);
+	width:371px;
+	height:0px;
+	position:absolute;
+	left:0px;
+	top:104px;
+}
+.e13_24 { 
+	border:1px solid rgba(151.00000619888306, 151.00000619888306, 151.00000619888306, 1);
+}
+.e13_25 { 
+	color:rgba(0, 0, 0, 1);
+	width:98px;
+	height:18px;
+	position:absolute;
+	left:263px;
+	top:78px;
+	font-family:Lato;
+	text-align:right;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_27 { 
+	color:rgba(0, 0, 0, 1);
+	width:231px;
+	height:18px;
+	position:absolute;
+	left:30px;
+	top:111px;
+	font-family:Lato;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_29 { 
+	color:rgba(0, 0, 0, 1);
+	width:9px;
+	height:25.34964942932129px;
+	position:absolute;
+	left:10px;
+	top:111px;
+	font-family:Lato;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_30 { 
+	transform: rotate(-0.000007503084213529598deg);
+	width:371px;
+	height:0px;
+	position:absolute;
+	left:0px;
+	top:137px;
+}
+.e13_30 { 
+	border:1px solid rgba(151.00000619888306, 151.00000619888306, 151.00000619888306, 1);
+}
+.e13_33 { 
+	transform: rotate(-0.000007503084213529598deg);
+	width:371px;
+	height:0px;
+	position:absolute;
+	left:0px;
+	top:140px;
+}
+.e13_33 { 
+	border:1px solid rgba(151.00000619888306, 151.00000619888306, 151.00000619888306, 1);
+}
+.e13_31 { 
+	color:rgba(0, 0, 0, 1);
+	width:98px;
+	height:18px;
+	position:absolute;
+	left:263px;
+	top:111px;
+	font-family:Lato;
+	text-align:right;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_34 { 
+	color:rgba(0, 0, 0, 1);
+	width:72px;
+	height:18px;
+	position:absolute;
+	left:30px;
+	top:151px;
+	font-family:Lato;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_35 { 
+	color:rgba(0, 0, 0, 1);
+	width:98px;
+	height:18px;
+	position:absolute;
+	left:263px;
+	top:151px;
+	font-family:Lato;
+	text-align:right;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e13_37 { 
+	color:rgba(0, 0, 0, 1);
+	width:98px;
+	height:18px;
+	position:absolute;
+	left:263px;
+	top:169px;
+	font-family:Lato;
+	text-align:right;
+	font-size:10px;
+	letter-spacing:0;
+	line-height:px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .second_block {
     background-color: blueviolet;
     position: absolute;
@@ -70,18 +411,3 @@ footer {
     top: 723px;
     background: #333333;
     }
-
-/*
-#drop-down {
-    position: absolute;
-    height: 32px;
-    left: 0%;
-    right: 0%;
-    top: 25px;
-
-    background: #FFFFFF;
-    border: 1px solid #979797;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-*/
