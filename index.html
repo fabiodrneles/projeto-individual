@@ -4,72 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Projeto Individual</title>
+    <title>Projeto Individual - Controle Financeiro</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
 
+<!-- Área do cabeçalho -->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="/logo.svg" alt="">
-            </div>
-
-            <div class="controleFinanceiro">
-                <p>Controle financeiro</p>
-            </div>
-
-            <div class="menu">
-                <img src="/mobile-menu.svg" alt="">
-            </div>
+        <nav class="d-flex">
+            <ul class="d-flex">
+                <li class="logo">
+                    <img src="/imagens/logo.svg" alt="" style="margin-left: 22px;">
+                </li>
+                <li class="navtext">
+                    <p>Controle financeiro</p>
+                </li>
+                <li id="mobile-menu">
+                    <img src="/imagens/mobile-menu.svg" alt="" style="margin-right: 18px;">
+                </li>
+                <li class="menu">
+                    <a class="option" id="fecharNavbar">
+                        <img src="/imagens/sidebar-close-btn.svg" alt="">
+                    </a>
+                    <a href="#" class="option">Cadastro de transações</a>
+                    <a class="option">Limpar dados</a>
+                </li>
+            </ul>
         </nav>
     </header>
-
+<!-- Área main - Parte do corpo do conteúdo da aplicação -->
     <main>
-        <section class="first_block">
-            <form action="">
-                <div class="formulario_transacao">
-                    <label class="text_transacao" for="">Tipo de Transação</label>
-                    <select name="" id="drop-down">
+        <section class="transacao">
+            <p class="novaTransacao">Nova Transação</p>
+            <form class="transacaoForm">
+                <div class="d-flex tipodetransacao">
+                    <label class="formularioLabel label" for="acaoMercadoria d-flex" style="margin-left: 20px;">Tipo de Transação</label>
+                    <select class="selectInput acaoMercadoria" name="acaoMercadoria" form="acaoMercadoria" style="margin-right: 20px;margin-left: 20px;">
                         <option value="compra">Compra</option>
                         <option value="venda">Venda</option>
                     </select>
                 </div>
+
+                <div class="d-flex mercadoria">
+                    <label class="formularioLabel label" for="nomeMercadoria d-flex" style="margin-left: 20px;margin-top: 20px;">Nome da Mercadoria</label>
+                    <input type="text" name="nomeMercadoria" class="textInput nomeMercadoria" placeholder="Produto" style="margin-right: 20px;margin-left: 20px;">
+                </div>
+
+                <div class="d-flex valor">
+                    <label class="formularioLabel label" for="valorInput d-flex" style="margin-left: 20px;margin-top: 20px;">Valor</label>
+                    <input type="text" name="valorInput" class="textInput valorInput" placeholder="R$ 0,00" style="margin-right: 20px;margin-left: 20px;">
+                </div>
+
+                <div class="d-flex botao" style="margin-top: 20px;">
+                    <input class="btnSubmit" type="submit" value="Adicionar Transação" style="margin-right: 20px;margin-left:20px;">
+                </div>
+
             </form>
-
-            <div class="nome_mercadoria">
-                <label for="">Nome da mercadoria</label>
-                <input type="text" placeholder="Monitor 21 Polegadas">
-            </div>
-
-            <div class="valor">
-                <label for="">Valor</label>
-                <input type="number" placeholder="R$0,00">
-            </div>
-
-            <div class="botao">
-                <input class="btnSubmit" type="submit" value="Adicionar Transação">
-            </div>
-            <hr>
         </section>
 
-        <section class="second_block">
-            <div class="second_intern">
+        <hr class="linha">
 
-                <div class="e13_38">
-                    <span>Extrato de transações</span>
-                </div>
+        <section class="extrato">
 
-                <div class=e13_39>
-                    <span class="e11_0">Mercadoria</span>
-                    <span  class="e11_1">Valor</span>
-                </div>
+            <h1 class="d-flex titulo">Extrato de Transações</h1>
+
+            <div class="d-flex tabelaColunas">
+                <p class="textoTabela colunaMercadoria">Mercadoria</p>
+                <p class="textoTabela colunaValor">Valor</p>
+            </div>
+
+            <div id="todasTransacoes" style="padding: 0;">
             </div>
         </section>
     </main>
-
-
-    <footer>
-    </footer>
+<!-- Área de rodapé -->
+    <section class="footer">
+        <footer>
+        </footer>
+    </section>
 </body>
 </html>
