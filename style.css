@@ -113,10 +113,22 @@ hr {
 }
 
 
-
-
-
-
+.e13_38 { 
+    background-color: #ebef0d;
+    position: absolute;
+    width: 174px;
+    height: 20px;
+    margin-left: 109px;
+    margin-top: -21px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #000000;
+}
 
 
 
@@ -376,20 +388,6 @@ hr {
 	letter-spacing:0;
 	line-height:px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
