@@ -296,7 +296,7 @@ a.opcao:not(:first-of-type):hover{
 }
 
 @media only screen and (min-width: 1100px){
-    .menu{
+    .menu {
         width: unset;
         position: sticky;
         height: unset;
@@ -374,7 +374,8 @@ a.opcao:not(:first-of-type):hover{
     }
 
     .navtext, .logo{
-        padding-left: 20px;
+        /* padding-left: 20px; */
+        margin-right: 20px;
     }
 
     #mobile-menu, #fecharNavbar{
@@ -414,4 +415,5 @@ a.opcao:not(:first-of-type):hover{
     .label, .textoTabela, .btnSubmit, .selectInput, .textInput::placeholder{
         font-size: 16px;
     }
+
 }
