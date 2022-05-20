@@ -238,6 +238,7 @@ a.option{
     text-align: end;
     white-space: nowrap;
     transition: ease 1.2s;
+    cursor: pointer;
 }
 
 a.option:first-of-type{
@@ -340,6 +341,7 @@ a.option:not(:first-of-type):hover{
         width: 40%;
         border: 1px solid #979797;
         margin: 40px;
+        margin-left: 240px;
         border-radius: 5px;
         top: 70px;
         position: sticky;
