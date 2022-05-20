@@ -1,4 +1,4 @@
-/* Validações */
+/* Validação e máscara do formulário */
 const letterPattern = /[^0-9]/;
 
 function formatMoney(e){
