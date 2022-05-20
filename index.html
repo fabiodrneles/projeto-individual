@@ -4,66 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Individual - Controle Financeiro</title>
+    <title> Projeto Inidividual </title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-<!-- Área do cabeçalho -->
-    <header>
+    <section class="header">
         <nav class="d-flex">
             <ul class="d-flex">
                 <li class="logo">
-                    <img src="/imagens/logo.svg" alt="" style="margin-left: 22px;">
+                    <img src="/imagens/logo.svg" alt="">
                 </li>
                 <li class="navtext">
-                    <p>Controle financeiro</p>
+                    <p>Controle Financeiro</p>
                 </li>
                 <li id="mobile-menu">
-                    <img src="/imagens/mobile-menu.svg" alt="" style="margin-right: 18px;">
+                    <img src="/imagens/mobile-menu.svg" alt="" onclick="abrirSideNav()">
                 </li>
                 <li class="menu">
-                    <a class="option" id="fecharNavbar">
+                    <a class="opcao" id="fecharNavbar" onclick="fecharSideNav()">
                         <img src="/imagens/sidebar-close-btn.svg" alt="">
                     </a>
-                    <a href="#" class="option">Cadastro de transações</a>
-                    <a class="option">Limpar dados</a>
+                    <a href="#" class="opcao" onclick='focusForm()'>Cadastro de transações</a>
+                    <a class="opcao" onclick="clearTransaction()">Limpar dados</a>
                 </li>
             </ul>
         </nav>
-    </header>
-<!-- Área main - Parte do corpo do conteúdo da aplicação -->
+    </section>
+
     <main>
         <section class="transacao">
             <p class="novaTransacao">Nova Transação</p>
-            <form class="transacaoForm">
+            <form class="transacaoForm" onsubmit="subimitForm(event)">
                 <div class="d-flex tipodetransacao">
-                    <label class="formularioLabel label" for="acaoMercadoria d-flex" style="margin-left: 20px;">Tipo de Transação</label>
-                    <select class="selectInput acaoMercadoria" name="acaoMercadoria" form="acaoMercadoria" style="margin-right: 20px;margin-left: 20px;">
+                    <label class="formularioLabel label" for="acaoMercadoria d-flex">Tipo de Transação</label>
+                    <select class="selectInput acaoMercadoria" name="acaoMercadoria" form="acaoMercadoria">
                         <option value="compra">Compra</option>
                         <option value="venda">Venda</option>
                     </select>
                 </div>
 
                 <div class="d-flex mercadoria">
-                    <label class="formularioLabel label" for="nomeMercadoria d-flex" style="margin-left: 20px;margin-top: 0px;">Nome da Mercadoria</label>
-                    <input type="text" name="nomeMercadoria" class="textInput nomeMercadoria" placeholder="Produto" style="margin-right: 20px;margin-left: 20px;">
+                    <label class="formularioLabel label" for="nomeMercadoria d-flex">Nome da Mercadoria</label>
+                    <input type="text" name="nomeMercadoria" class="textInput nomeMercadoria" placeholder="Produto">
                 </div>
 
                 <div class="d-flex valor">
-                    <label class="formularioLabel label" for="valorInput d-flex" style="margin-left: 20px;margin-top: 0px;">Valor</label>
-                    <input type="text" name="valorInput" class="textInput valorInput" placeholder="R$ 0,00" style="margin-right: 20px;margin-left: 20px;">
+                    <label class="formularioLabel label" for="valorInput d-flex">Valor</label>
+                    <input type="text" name="valorInput" class="textInput valorInput" placeholder="R$ 0,00" onkeypress="formatMoney(event)">
                 </div>
 
-                <div class="d-flex botao" style="margin-top: 20px;">
-                    <input class="btnSubmit" type="submit" value="Adicionar Transação" style="margin-right: 20px;margin-left:20px;">
+                <div class="d-flex botao">
+                    <input class="btnSubmit" type="submit" value="Adicionar Transação">
                 </div>
 
             </form>
         </section>
 
-        <hr class="linha">
+        <hr class="hr-linha">
 
         <section class="extrato">
 
@@ -76,9 +74,11 @@
 
             <div id="todasTransacoes" style="padding: 0;">
             </div>
+
         </section>
+
     </main>
-<!-- Área de rodapé -->
+
     <section class="footer">
         <footer>
         </footer>
