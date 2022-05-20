@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'lato';
     font-weight: 300;
-    src: url('/fontes/Lato-Regular.ttf');
+    src: url('../fonts/Lato-Regular.ttf');
 }
 
 @font-face {
     font-family: 'lato';
     font-weight: 600;
-    src: url('/fontes/Lato-Bold.ttf');
+    src: url('../fonts/Lato-Bold.ttf');
 }
 
 * {
@@ -16,8 +16,6 @@
     font-family: 'lato', sans-serif;
 }
 
-
-/* d-flex vem da nomenclatura display flex, sinalizando que o elemento possui esta propriedade */
 .d-flex {
     display: flex;
 }
@@ -51,13 +49,11 @@ li {
     font-size: 20px;
 }
 
-header{
+.header{
     position: sticky;
     top: 0;
 }
 
-
-/* Lembrete: A vírgula em um seletor CSS separa vários seletores nos mesmos estilos */
 .tipodetransacao,
 .mercadoria,
 .valor,
@@ -67,7 +63,7 @@ header{
 }
 
 .btnSubmit {
-    height: 35px;
+    height: 32px;
     background-color: #333333;
     border: none;
     border-radius: 5px;
@@ -104,6 +100,7 @@ header{
     margin-bottom: 20px;
 }
 
+
 main{
     display: flex;
     flex-direction: column;
@@ -113,7 +110,7 @@ main{
     height: 100%;
 }
 
-.linha {
+.hr-linha {
     color: #979797;
     margin: 5px;
 }
@@ -200,7 +197,7 @@ p.acaoTransacao {
 }
 
 
-/* barra de navegação mobile*/
+/* Side navbar mobile*/
 #fecharNavbar {
     display: none;
 }
@@ -228,8 +225,7 @@ p.acaoTransacao {
 .openMenu{
     width: 250px;
 }
-
-a.option{
+a.opcao{
     text-decoration: none;
     width: 100%;
     color: #FFFFFF;
@@ -237,30 +233,26 @@ a.option{
     margin-right: 20px;
     text-align: end;
     white-space: nowrap;
-    transition: ease 1.2s;
     cursor: pointer;
 }
-
-a.option:first-of-type{
+a.opcao:first-of-type{
     text-align: start;
-    /* color: red; */
+    color: red;
     margin: 0;
     margin-left: 50px;
 }
-img.option{
+img.opcao{
     display: flex;
 }
 
-a.option img{
+a.opcao img{
     width: 20px;
 }
-
-a.option:not(:first-of-type):hover{
+a.opcao:not(:first-of-type):hover{
     background-color: #FFFFFF;
-    color: #535353;
+    color: #333333;
 }
 
-/* breakpoint para telas acima de 768px */
 @media only screen and (min-width: 768px) {
     main{
         flex-direction: column;
@@ -303,7 +295,6 @@ a.option:not(:first-of-type):hover{
     }
 }
 
-/* breakpoint para telas acima de 1100 */
 @media only screen and (min-width: 1100px){
     .menu{
         width: unset;
@@ -326,25 +317,31 @@ a.option:not(:first-of-type):hover{
         color: #333333;
         text-align: unset;
     }
-    a.option{
+    a.opcao{
         width: unset;
         padding: 10px;
     }
-    a.option:not(:first-of-type):hover {
+    a.opcao:not(:first-of-type):hover {
         background-color: #333333;
         color: #FFFFFF;
     }
-    .linha{
+    .hr-linha{
         display: none;
     }
     .transacao {
         width: 40%;
         border: 1px solid #979797;
         margin: 40px;
-        margin-left: 240px;
         border-radius: 5px;
         top: 70px;
         position: sticky;
+    }
+
+    section.transacao {
+        margin-left: 200px;
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 546px;
     }
 
     main{
@@ -354,6 +351,13 @@ a.option:not(:first-of-type):hover{
     .extrato{
         width: 50%;
     }
+
+    section.extrato {
+        margin-top: 30px;
+        margin-right: 200px;
+        margin-left: 20px;
+        margin-bottom: 609px;
+    }
     .novaTransacao {
         display: flex;
         justify-content: center;
@@ -362,7 +366,6 @@ a.option:not(:first-of-type):hover{
     }
 
     /*navbar*/
-
     ul{
         justify-content: unset;
     }
@@ -377,9 +380,7 @@ a.option:not(:first-of-type):hover{
     #mobile-menu, #fecharNavbar{
         display: none;
     }
-
     /*section formulario transação*/
-
     .transacaoForm{
         flex-direction: column;
     }
