@@ -165,6 +165,8 @@ p.acaoTransacao {
     padding-left: 5px;
 }
 
+
+
 .linhaTotalValor,
 .linhaTotal {
     font-weight: 600;
@@ -222,10 +224,10 @@ p.acaoTransacao {
     flex-direction: column; 
     padding-top: 20px;
 }
-.openMenu{
+.openMenu {
     width: 250px;
 }
-a.opcao{
+a.opcao {
     text-decoration: none;
     width: 100%;
     color: #FFFFFF;
@@ -253,9 +255,15 @@ a.opcao:not(:first-of-type):hover{
     color: #333333;
 }
 
+/* Tablet */
 @media only screen and (min-width: 768px) {
     main{
         flex-direction: column;
+    }
+
+    img {
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .novaTransacao {
         display: flex;
@@ -317,6 +325,7 @@ a.opcao:not(:first-of-type):hover{
         color: #333333;
         text-align: unset;
     }
+
     a.opcao{
         width: unset;
         padding: 10px;
