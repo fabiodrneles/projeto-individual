@@ -6,12 +6,13 @@ function fecharSideNav() {
 	document.getElementsByClassName("menu")[0].classList.remove("openMenu")
 }
 
-if(document.body.clientWidth > 1100){
+if (document.body.clientWidth > 1100) {
 	document.querySelectorAll(".opcao").forEach(function(e){
 		e.removeAttribute("href");
 	});
 }
 
+/* Tratando formado de moeda */
 const formatter = new Intl.NumberFormat('pt-BR', {
 	style: 'currency',
 	currency: 'BRL',
@@ -20,12 +21,12 @@ const formatter = new Intl.NumberFormat('pt-BR', {
 
 var transactions = localStorage.getItem("transactions") ? JSON.parse(localStorage.getItem("transactions")) : [];
 
-function focusForm(){
+function focusForm() {
 	fecharSideNav()
 	document.getElementsByName("nomeMercadoria")[0].focus();
 }
 
-function clearTransaction(){
+function clearTransaction() {
 	let userConfirm = confirm("Deseja limpar dados da lista ?");
 	if(userConfirm){
 		fecharSideNav();
@@ -35,40 +36,43 @@ function clearTransaction(){
 	}
 }
 
-async function drawTable(){
+async function drawTable() {
 	let total = 0;
 
 	document.querySelectorAll("#todasTransacoes > * ").forEach((element => {
 		element.remove();
 	}));
 
-	if(transactions.length == 0){
-		document.querySelector("#todasTransacoes").innerHTML =`
+	if (transactions.length == 0) {
+		document.querySelector("#todasTransacoes").innerHTML =
+        `
 		<div class="d-flex" id="nenhumaTransacao" style="justify-content: center;">
 		<p>Nenhuma transação cadastrada.</p>
 		</div>
 		`
 	}
 
-	for(item in transactions){
+	for (item in transactions) {
 
-		if(transactions[item].transType == "compra"){
+		if (transactions[item].transType == "compra") {
 			total -= transactions[item].transCurrency;
-		}else{
+		} else {
 			total += transactions[item].transCurrency;
 		}
 
 		document.getElementById("todasTransacoes").innerHTML += 
-		`<div class="d-flex tabelaLinha">
+		`
+        <div class="d-flex tabelaLinha">
 		<div class="linha d-flex">
-		<p class="acaoTransacao">${transactions[item].transType == "compra" ? "-" : "+"}</p>
-		<p class="textoTabela linhaMercadoria">${transactions[item].transName}</p>
-		<p class="textoTabela linhaValor">${formatter.format(transactions[item].transCurrency.toString().replace(/([0-9]{2})$/g, ".$1"))}</p>
+		<p class="acaoTransacao"> ${transactions[item].transType == "compra" ? "-" : "+"} </p>
+		<p class="textoTabela linhaMercadoria"> ${transactions[item].transName} </p>
+		<p class="textoTabela linhaValor"> ${formatter.format(transactions[item].transCurrency.toString().replace(/([0-9]{2})$/g, ".$1"))}</p>
 		</div>
-		</div>`
+		</div>
+        `
 	}
 
-	if(transactions.length > 0){
+	if (transactions.length > 0) {
 		document.getElementById("todasTransacoes").innerHTML += 
 		`<div class="d-flex tabelaLinhaTotal">
 		<div class="linha d-flex">
@@ -85,21 +89,19 @@ async function drawTable(){
 	}
 }
 
-function subimitForm(e){
+function subimitForm(e) {
 	e.preventDefault();
 
 	transactionCurrency = document.querySelector('input[name="valorInput"]');
 	transactionName = document.querySelector('input[name="nomeMercadoria"]');
 	transactionType = document.querySelector('select[name="acaoMercadoria"]');
 
-	if(!transactionName.value){
+	if (!transactionName.value) {
 		transactionName.focus();
 		return;
 	}
 
-	/* console.log(!transactionCurrency.value && transactionCurrency.value.replace(/[^0-9]/g, "") == "") */
-
-	if(transactionCurrency.value.replace(/[^0-9]/g, "") == ""){
+	if (transactionCurrency.value.replace(/[^0-9]/g, "") == "") {
 		transactionCurrency.focus();
 		return;
 	}
