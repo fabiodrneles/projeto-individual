@@ -301,6 +301,17 @@ a.opcao:not(:first-of-type):hover{
     .botao {
         width: 200px;
     }
+
+    .tabelaColunas, .tabelaLinha {
+        margin-left: 20px;
+        margin-right: 20px;
+    } 
+
+    div.d-flex.tabelaLinhaTotal {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
 }
 
 @media only screen and (min-width: 1100px){
