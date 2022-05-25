@@ -136,6 +136,8 @@ main{
     border-top: 1px solid #979797;
     margin-top: 2px;
     padding-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .titulo {
