@@ -255,6 +255,10 @@ a.opcao:not(:first-of-type):hover{
     color: #333333;
 }
 
+p {
+    color: #333333;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
     main{
