@@ -1,8 +1,8 @@
-# Projeto individual sobre aplicação de controle financeiro.
+# Projeto individual - Aplicação de controle financeiro.
 
-![Captura de tela de 2022-04-28 18-12-49](https://user-images.githubusercontent.com/42509240/165853423-f695fbff-cb64-463a-80c1-7db875d106ca.png)
+![Captura de tela de 2022-05-25 10-04-43](https://user-images.githubusercontent.com/42509240/170270323-30ec04c9-7219-40c5-8a44-165f16282c49.png)
 
-![Captura de tela de 2022-04-28 18-14-05](https://user-images.githubusercontent.com/42509240/165853763-163cc42b-291e-4c40-9db5-575be670c8d6.png)
+![Captura de tela de 2022-05-25 10-10-21](https://user-images.githubusercontent.com/42509240/170270594-e7afc485-951f-49ff-b93b-26316722ab9a.png)
 
-![Captura de tela de 2022-04-28 18-54-16](https://user-images.githubusercontent.com/42509240/165854261-e224c6a0-ff53-4ae8-94a5-fc6463830610.png)
+![Captura de tela de 2022-05-25 10-10-01](https://user-images.githubusercontent.com/42509240/170270692-9121e351-5533-4b48-a6b4-4c54bb099c3d.png)
 
